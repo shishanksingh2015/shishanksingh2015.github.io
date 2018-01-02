@@ -79,22 +79,37 @@ We are dreamers, travelers, adventure seekers, takers of the road less taken, ba
 
 
 <script type="text/javascript">
-var recommendations = firebase.database().ref("emails");
+var emails = firebase.database().ref("emails");
 
 // Save a new recommendation to the database, using the input in the form
-var submitRecommendation = function () {
+var submitEmail = function () {
 
   // Get input values from each of the form elements
   var email = $("#exampleInputEmail1").val();
   // Push a new recommendation to the database using those values
-  recommendations.push({
-    "user": email
-  });
+  emails.push(email);
 };
+var users = [];
+
 $(window).load(function () {
 
-  $("#emailForm").submit(submitRecommendation);
+  $("#emailForm").submit(function () {
+ submitEmail();
+ emails.once("value")
+   .then(function(snapshot) {
+     snapshot.forEach(childSnapshot => {
+           let item = childSnapshot.val();
+           item.key = childSnapshot.key;
+           users.push(item);
+       });
+       alert(users[users.length - 1])
+       $("#exampleInputEmail1").val(' ')
+   });
+ return false;
 });
+});
+
+
 </script>
 
     <script src="ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
