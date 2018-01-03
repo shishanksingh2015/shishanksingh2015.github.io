@@ -69,17 +69,12 @@
 					<h1 class="header-title" style="margin:auto;">
 						Travel to a surprise destination!
 					</h1>
-        </br>
-        </br>
 					<p class="header-subtitle">
 						Let us plan a 3-day getaway for you.
 					</p>
-          </br>
-          </br>
 					 <form id="emailForm" role="form">
 						<div class="form-group">
-							<input class="form-control" id="exampleInputEmail1" name="email" required
-                data-fv-notempty-message="Please enter email to register with us." placeholder="Enter Email" style="width: 40%; height:40px; margin: auto;" type="email">
+							<input class="form-control" id="exampleInputEmail1" placeholder="Enter Email" style="width: 50%;margin: auto;" type="email">
 						</div>
 						<button type="submit" class="btn btn-primary btn-lg">Request Invite</button>
 					</form>
@@ -103,10 +98,10 @@
 			<div class="underline purple"></div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
-					<img src="assets/images/about-1.png" style="width:277px" alt="about" class="about-img">
+					<img src="assets/images/about-1.png" alt="about" class="about-img">
 				</div> <!-- /.col-md-3 -->
 				<div class="col-md-3 col-sm-6">
-					<img src="assets/images/about-2.png"style="width:277px" alt="about" class="about-img">
+					<img src="assets/images/about-2.png" alt="about" class="about-img">
 				</div> <!-- /.col-md-3 -->
 
 				<div class="col-md-6 col-sm-12">
@@ -166,6 +161,26 @@
 	                </p>
 	            </div>
 	            </div>
+
+	        <!-- </div> <!- /.row -->
+	        <!-- <form class="row form">
+                <h3>Leave A Message</h3>
+                <div class="col-sm-4 col-xs-12 form-group">
+                    <label class="sr-only">Name</label>
+                    <input name="name" class="form-control" type="text" placeholder="First Name">
+                </div> <!- /.form-group -->
+                <!-- <div class="col-sm-4 col-xs-12 form-group">
+                    <label class="sr-only">Email</label>
+                    <input name="email" class="form-control" type="email" placeholder="Email address">
+                </div> <!- /.form-group -->
+                <!-- <div class="row">
+                    <div class="col-md-12 col-xs-12 form-group">
+                        <label class="sr-only">Message</label>
+                        <textarea class="message form-control" placeholder="Write message"></textarea>
+                    </div> <!- /.form-group -->
+                    <!-- <input class="btn btn-sub" type="submit" value="Send Message">
+                </div> -->
+            <!-- </form> <!- /.row -->
 		</div> <!-- /.container -->
 	</section> <!-- /.contact -->
 
@@ -216,7 +231,6 @@
 
 	  // Get input values from each of the form elements
 	  var email = $("#exampleInputEmail1").val();
-
 	  // Push a new recommendation to the database using those values
 	  emails.push(email);
 	};
@@ -226,7 +240,6 @@
 
 	  $("#emailForm").submit(function () {
 	 submitEmail();
-
 	 emails.once("value")
 	   .then(function(snapshot) {
 	     snapshot.forEach(childSnapshot => {
