@@ -77,7 +77,7 @@ body
 .underline{
 	height: 2px;
 	width: 50px;
-	margin: 0px auto 60px;
+	margin: auto;
 }
 /*=================================================
 ||				3. Header
