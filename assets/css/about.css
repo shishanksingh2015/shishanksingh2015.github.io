@@ -5,11 +5,12 @@
 	background: #f3f3f3;
 }
 .about-detail{
-	font-size: 14px;
+	font-size: 28px;
 	color: #999;
 	font-weight: 200;
 	top: 50%;
-	transform: translateY(50%);
+	text-align: center;
+	transform: translateY(20%);
 	/*position: absolute;*/
 	/*padding-left: 40px;*/
     /*line-height: 22px;*/

@@ -68,7 +68,7 @@ body
 	text-transform: uppercase;
 }
 .section-item-detail{
-	font-size: 14px;
+	font-size: 16px;
     font-weight: 300;
     margin-bottom: 50px;
     color: #999;
@@ -188,7 +188,7 @@ body
 	margin-bottom: 100px;
 }
 .service .underline{
-	margin-bottom: 75px;
+	margin-bottom: 50px;
 }
 .service-img{
 	position: absolute;
