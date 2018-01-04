@@ -68,7 +68,7 @@ body
 	text-transform: uppercase;
 }
 .section-item-detail{
-	font-size: 16px;
+	font-size: 19px;
     font-weight: 300;
     margin-bottom: 50px;
     color: #999;
@@ -76,7 +76,7 @@ body
 }
 .underline{
 	height: 2px;
-	width: 50px;
+	width: 70px;
 	margin: auto;
 }
 /*=================================================
@@ -166,7 +166,7 @@ body
 	width: 100%;
 }
 .header-title{
-	font-size: 45px;
+	font-size: 40px;
 	letter-spacing: 5px;
 	font-weight: normal;
 }
