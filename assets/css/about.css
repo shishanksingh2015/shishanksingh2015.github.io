@@ -5,7 +5,8 @@
 	background: #f3f3f3;
 }
 .about-detail{
-	font-size: 28px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
 	color: #999;
 	font-weight: 200;
 	top: 50%;
@@ -16,6 +17,7 @@
     /*line-height: 22px;*/
 }
 .section-item-title, .section-item-detail{
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
 .about .row:nth-child(4){
