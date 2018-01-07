@@ -11,6 +11,7 @@
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		<title>Surprise Travel to India | Odyssey</title>
+
 		<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"/>
@@ -44,12 +45,15 @@
   </style>
 	</head>
 <body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+	<!-- <div id="loader" style="background:center border:3px;
+	position:absolute;top:10%;left:40%;z-index:9999;">
+	<img src="confirm.png"style = "width:40%;top:50%;left:50%"></img>
+</div> -->
 	<script src="lib/jquery.1.11.min.js"></script>
-
 <script src="app.js"></script>
 <div>
-	<a class="example-image-link" href="confirm.png" style="background-color: #313131;display:none"
-	data-lightbox="example-set"> asdsad
+	<a class="example-image-link" href="confirm.png"
+	data-lightbox="example-set">
 </a>
 </div>
 <!-- Home -->
@@ -170,6 +174,7 @@
 				</div>
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
+
 	</footer>
 
 
@@ -178,7 +183,6 @@
 
 	// Save a new recommendation to the database, using the input in the form
 	var submitEmail = function () {
-
 	  // Get input values from each of the form elements
 	  var email = $("#exampleInputEmail1").val();
 
@@ -188,7 +192,6 @@
 	var users = [];
 
 	$(window).load(function () {
-
 	  $("#emailForm").submit(function () {
 	 submitEmail();
 
@@ -199,7 +202,7 @@
 	           item.key = childSnapshot.key;
 	           users.push(item);
 	       });
-				 $('.example-image-link')[0].click();
+$('.example-image-link')[0].click();
 	       $("#exampleInputEmail1").val(' ')
 	   });
 	 return false;

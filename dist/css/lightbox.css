@@ -85,16 +85,18 @@ html.lb-disable-scrolling {
   left: 0;
   height: 100%;
   width: 100%;
+  background:#000;
   z-index: 10;
 }
 
 .lb-container > .nav {
   left: 0;
+background:#000;
 }
 
 .lb-nav a {
   outline: none;
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-image: url('loader.gif');
 }
 
 .lb-prev, .lb-next {
@@ -181,7 +183,7 @@ html.lb-disable-scrolling {
   clear: left;
   padding-bottom: 1em;
   font-size: 12px;
-  color: #999999;
+  color: #000;
 }
 
 .lb-data .lb-close {
