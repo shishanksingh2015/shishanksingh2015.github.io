@@ -9,3 +9,4 @@
     messagingSenderId: "423812130956"
   };
   firebase.initializeApp(config);
+  webshims.polyfill();

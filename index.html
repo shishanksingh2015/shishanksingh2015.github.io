@@ -54,6 +54,7 @@
 	<img src="confirm.png"style = "width:40%;top:50%;left:50%"></img>
 </div> -->
 	<script src="lib/jquery.1.11.min.js"></script>
+	<script src="assets/js/minified/polyfiller.js"></script>
 <script src="app.js"></script>
 <!-- Home -->
 	<section class="header" id="header">
@@ -95,8 +96,8 @@
           </br>
           </br>
 					 <form id="emailForm" role="form">
-						<div class="form-group">
-							<input class="form-control" id="exampleInputEmail1" name="email" required
+						<div class="form-group" id="formID">
+							<input class="form-control" id="exampleInputEmail1" name="email" required x-moz-errormessage="Please enter email to register with us."
                 data-fv-notempty-message="Please enter email to register with us." placeholder="Enter Email" style="width: 40%; height:40px; margin: auto;color:#000" type="email">
 						</div>
 						<button type="submit" class="btn btn-primary btn-lg" style="margin-top:20px;">Request Invite</button>
@@ -193,13 +194,23 @@
 	var submitEmail = function () {
 	  // Get input values from each of the form elements
 	  var email = $("#exampleInputEmail1").val();
-
+		var form = document.getElementById('formID'); // form has to have ID: <form id="formID">
+		form.noValidate = true;
+		form.addEventListener('submit', function(event) { // listen for form submitting
+		        if (!event.target.checkValidity()) {
+		            event.preventDefault(); // dismiss the default functionality
+		           // error message
+		        }
+		    }, false);
 	  // Push a new recommendation to the database using those values
 	  emails.push(email);
 	};
 	var users = [];
 
 	$(window).load(function () {
+		webshim.activeLang('en');
+        webshims.polyfill('forms');
+        webshims.cfg.no$Switch = true;
 	  $("#emailForm").submit(function () {
 	 submitEmail();
 
@@ -210,7 +221,7 @@
 	           item.key = childSnapshot.key;
 	           users.push(item);
 	       });
-// $('.example-image-link')[0].click();
+
 $('#emailForm').fadeOut('fast');
 $('.header-title').fadeOut('fast');
 	$('.header-subtitle').fadeOut('fast');
