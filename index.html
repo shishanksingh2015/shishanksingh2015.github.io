@@ -9,11 +9,14 @@
 		<!-- meta -->
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+
 			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		<title>Surprise Travel to India | Odyssey</title>
 
 		<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<link rel="preload" as="image" href="confirm.png">
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="dist/css/lightbox.min.css">
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -45,21 +48,15 @@
   }
   </style>
 	</head>
-<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1" style="background:url(https://media.giphy.com/media/l0HUo967FTyti43n2/giphy.gif) no-repeat center center fixed;">
 	<!-- <div id="loader" style="background:center border:3px;
 	position:absolute;top:10%;left:40%;z-index:9999;">
 	<img src="confirm.png"style = "width:40%;top:50%;left:50%"></img>
 </div> -->
 	<script src="lib/jquery.1.11.min.js"></script>
 <script src="app.js"></script>
-<div>
-	<a class="example-image-link" href="confirm.png"
-	data-lightbox="example-set">
-</a>
-</div>
 <!-- Home -->
 	<section class="header" id="header">
-
 		<nav class="navbar navbar-default" id="navigation-bar">
 			<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -221,6 +218,7 @@ $('.header-title').fadeOut('fast');
 								 $('.header-title').html('You are one step close to your');
 								  $('.header-title').css({ 'margin-top': '-20px' });
 									$('.header-title').css({ 'font-size':'30px'});
+
 		$('.subtitle').html('Thank you for signing up.<br>We will get in touch with you real soon.');
                 $('.header').css({'background-image': 'url("confirm.png")' });
 
