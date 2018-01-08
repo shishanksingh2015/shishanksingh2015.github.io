@@ -39,6 +39,7 @@
         .btn-primary{
           font-family: 'Lato', sans-serif;
         }
+
   .btn-primary:hover {
       background-color: #004D40;
   }
@@ -52,7 +53,7 @@
 	<script src="lib/jquery.1.11.min.js"></script>
 <script src="app.js"></script>
 <div>
-	<a class="example-image-link" href="confirm.jpeg"
+	<a class="example-image-link" href="confirm.png"
 	data-lightbox="example-set">
 </a>
 </div>
@@ -87,6 +88,9 @@
 						Travel to a surprise destination!
 					</h1>
         </br>
+				<h1 class="header-title1" id="surprise_title" style="margin:auto;font-family: 'Lato', sans-serif;font-weight:bold; display:none;">
+					SURPRISE DESTINATION!
+				</h1>
         </br>
 					<p class="header-subtitle">
 						Let us plan a 3-day getaway for you.
@@ -100,6 +104,13 @@
 						</div>
 						<button type="submit" class="btn btn-primary btn-lg" style="margin-top:20px;">Request Invite</button>
 					</form>
+				</br>
+				</br>
+				</br>
+				</br>
+		    </br>
+					<p class="subtitle" style="margin:auto;">
+					</p>
 				</div> <!-- /.header-wrapper -->
 			</div>
 
@@ -202,7 +213,23 @@
 	           item.key = childSnapshot.key;
 	           users.push(item);
 	       });
-$('.example-image-link')[0].click();
+// $('.example-image-link')[0].click();
+$('#emailForm').fadeOut('fast');
+$('.header-title').fadeOut('fast');
+	$('.header-subtitle').fadeOut('fast');
+            $('.header').fadeOut('fast', function () {
+								 $('.header-title').html('You are one step close to your');
+								  $('.header-title').css({ 'margin-top': '-20px' });
+									$('.header-title').css({ 'font-size':'30px'});
+		$('.subtitle').html('Thank you for signing up.<br>We will get in touch with you real soon.');
+                $('.header').css({'background-image': 'url("confirm.png")' });
+
+                $('.header').fadeIn('fast');
+								$('#surprise_title').fadeIn('fast');
+								$('.subtitle').fadeIn('fast');
+								$('.header-title').fadeIn('fast');
+            });
+
 	       $("#exampleInputEmail1").val(' ')
 	   });
 	 return false;
