@@ -399,7 +399,7 @@ footer{
 	background: #2CAAE1;
 }
 .google{
-	background: #c62828;
+	background: #F04A4A;
 }
 .rss{
 	background: #ff8f00;
@@ -421,19 +421,19 @@ a .icon{
 	float: right;
 }*/
 a .icon:hover{
-	background: transparent;
+	/* background: transparent; */
 }
 a .fb:hover{
-	color: #1976d2;
-	border-color: #1976d2;
+	/* color: #1976d2;
+	border-color: #1976d2; */
 }
 a .twitter:hover{
-	color: #2CAAE1;
-	border-color: #2CAAE1;
+	/* color: #2CAAE1;
+	border-color: #2CAAE1; */
 }
 a .google:hover{
-	color: #c62828;
-	border-color: #c62828;
+	/* color: #c62828;
+	border-color: #c62828; */
 }
 a .rss:hover{
 	color: #ff8f00;
