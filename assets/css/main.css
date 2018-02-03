@@ -83,7 +83,12 @@ body
 }
 .underline{
 	height: 2px;
-	width: 70px;
+	width: 90px;
+	margin: auto;
+}
+.underlineTestimonial{
+	height: 2px;
+	width: 200px;
 	margin: auto;
 }
 /*=================================================
