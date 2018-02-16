@@ -20,6 +20,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/form-labels-on-top.css">
+	<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.12/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+	<link href="css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+	<!-- font-awesome for social network icons -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
 <!-- default css files -->
 
 <!--web font-->
@@ -27,11 +34,68 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 <!--//web font-->
 
+ <link type="text/css" rel="stylesheet" href="css/featherlight.css" />
+<style type="text/css">
+	@media all {
+		.lightbox { display: none; }
+		.fl-page h1,
+		.fl-page h3,
+		.fl-page h4 {
+			font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+			font-weight: 100;
+			letter-spacing: 1px;
+		}
+		.fl-page h1 { font-size: 110px; margin-bottom: 0.5em; }
+		.fl-page h1 i { font-style: normal; color: #ddd; }
+		.fl-page h1 span { font-size: 30px; color: #333;}
+		.fl-page h3 { text-align: right; }
+		.fl-page h3 { font-size: 15px; }
+		.fl-page h4 { font-size: 2em; }
+		.fl-page .jumbotron { margin-top: 2em; }
+		.fl-page .doc { margin: 2em 0;}
+		.fl-page .btn-download { float: right; }
+		.fl-page .btn-default { vertical-align: bottom; }
+
+		.fl-page .btn-lg span { font-size: 0.7em; }
+		.fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em;}
+		.fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
+		.fl-page .github { margin: 2em 0; }
+		.fl-page .github a { vertical-align: top; }
+		.fl-page .marketing a { color: #999; }
+
+		/* override default feather style... */
+		.fixwidth {
+			background: rgba(256,256,256, 0.8);
+		}
+		.fixwidth .featherlight-content {
+			width: 500px;
+			padding: 25px;
+			color: #fff;
+			background: #111;
+		}
+		.fixwidth .featherlight-close {
+			color: #fff;
+			background: #333;
+		}
+
+	}
+	@media(max-width: 768px){
+		.fl-page h1 span { display: block; }
+		.fl-page .btn-download { float: none; margin-bottom: 1em; }
+	}
+		</style>
 </head>
 
 <!-- Body -->
 <body>
-
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12&appId=952302144924079&autoLogAppEvents=1';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 <!-- banner -->
 <div class="main_section_agile" id="home">
 	<div class="container">
@@ -50,9 +114,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu--iris">
 						<ul class="nav navbar-nav menu__list">
-							<li class="scroll menu__item"><a href="#about" class="scroll menu__link">Home</a></li>
+							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
 							<li class="scroll menu__item"><a href="#services" class="scroll menu__link">How It Works </a></li>
-							<li class="menu__item"><a href="howitworks.html"class=" menu__link" >Signup!</a></li>
+							<li class="menu__item"><a href="#" data-featherlight="#fl1" class=" menu__link" >Signup!</a></li>
 							<li class="scroll menu__item"><a href="#team" class="scroll menu__link">Team</a></li>
 							<li class="scroll menu__item"><a href="#gallery" class="scroll menu__link">Gallery</a></li>
 							<li class="scroll menu__item"><a href="#testimonials" class="scroll menu__link">Testimonials</a></li>
@@ -74,7 +138,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="agileits-banner-info">
 									<h3>Make Your Dream Live </h3>
 									<h3>Adventures fill your soul</h3>
-									 <p>Travel Adventure</p>
+									 <p>Odyssey Surprise Travels</p>
 								</div>
 					</div>
 					</div>
@@ -85,7 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="agileits-banner-info">
 									<h3>Adventure awaits for you</h3>
 									<h3>Lets travel to see the world</h3>
-									 <p>Travel Adventure</p>
+									 <p>Odyssey Surprise Travels</p>
 
 								</div>
 							</div>
@@ -97,10 +161,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="agileits-banner-info">
 									<h3>One Way To Get Out Of Life</h3>
 									<h3>Lets find some beautiful place</h3>
-									 <p>Travel Adventure</p>
-
+									 <p>Odyssey Surprise Travels</p>
 								</div>
-
 							</div>
 						</div>
 					</li>
@@ -109,21 +171,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
       </div>
 <!-- //banner -->
-
 <!-- about -->
 <div class="about" id="about">
 	<div class="container">
 		<div class="abouthead">
-			<h5>About us</h5>
-			<h2 class="heading">Who we are</h2>
+			<h5>Who we are</h5>
+			<!-- <h2 class="heading"></h2> -->
 			<p>We are dreamers, travellers, adventure seekers,
 				 takers of the road less taken, backpackers on a mission to
 				 "revolutionize travel!" or "make travel fun, laid back and exciting -
 				 the way it was meant to be!"</p>
 		</div>
 		<div class="col-md-6 aboutleft">
-			<h4>Our Trip</h4>
-			<h3>Travel Adventure</h3>
+			<h4>Odyssey</h4>
+			<h3>Surprise Travels</h3>
 			<p>It is a big and beautiful world out there. Most of us live and die in the same corner where we are born and never get to see any of it.
           WE DON’T WANT THAT TO HAPPEN TO YOU.
           We at Odyssey want to take away the pain of planning the holidays.
@@ -199,34 +260,34 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 <div class="count-agileits" id="stats">
 					<div class="count-grids">
 					<div class="count-bgcolor-w3ls">
-						<div class="col-md-3 count-grid">
+						<div class="col-md-4 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='5' data-delay='.5' data-increment="1">148</div>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='4' data-delay='.5' data-increment="1">148</div>
 									<span></span>
 									<h5>Tours</h5>
 							</div>
 						</div>
-						<div class="col-md-3 count-grid">
+						<div class="col-md-4 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='5' data-delay='.5' data-increment="1">372</div>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='25' data-delay='.5' data-increment="1">372</div>
 									<span></span>
-									<h5>Plans</h5>
+									<h5>Days</h5>
 							</div>
 						</div>
-						<div class="col-md-3 count-grid">
+						<div class="col-md-4 count-grid">
 							<div class="count hvr-bounce-to-bottom">
-								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='5' data-delay='.5' data-increment="1">389</div>
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='4' data-delay='.5' data-increment="1">389</div>
 									<span></span>
-									<h5>Travel</h5>
+									<h5>Destinations</h5>
 							</div>
 						</div>
-						<div class="col-md-3 count-grid">
+						<!-- <div class="col-md-3 count-grid">
 							<div class="count hvr-bounce-to-bottom">
 								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='5' data-delay='.5' data-increment="1">109</div>
 									<span></span>
 									<h5>Gifts</h5>
 								</div>
-						</div>
+						</div> -->
 						<div class="clearfix"></div>
 						</div>
 					</div>
@@ -246,17 +307,25 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 			<div class="col-md-3 services-grids-w3-agile sg1">
 				<i class="fa fa-file-text"></i>
 				<h4>Step 1</h4>
-				<p style="color:white;text-align:left">Sign up and answer a few questions so that we get to know you better. Our team will match your travel preferences with an ideal location for you.</p>
+				<p style="color:white;text-align:left">Sign up and answer a few questions
+					so that we get to know you better. Our team will match your travel
+					preferences with an ideal location for you.</p>
 			</div>
 			<div class="col-md-3 services-grids-w3-agile sg2">
 				<i class="fa fa-map" aria-hidden="true"></i>
 				<h4>Step 2</h4>
-				<p style="color:white;text-align:left">Within 3 working days we will get back to you with multiple budget options for your trip.Once you authorize a budget, we will go ahead and confirm your bookings for your surprise destination.</p>
+				<p style="color:white;text-align:left">Within 3 working days we will get
+					 back to you with multiple budget options for your trip.Once you
+					 authorize a budget, we will go ahead and confirm your bookings for
+					 your surprise destination.</p>
 			</div>
 			<div class="col-md-3 services-grids-w3-agile sg3">
 				<i class="fa fa-envelope" aria-hidden="true"></i>
 				<h4>Step 3</h4>
-				<p style="color:white;text-align:left">A week before your departure we will send you an email which contains weather forecast and recommended items to pack. 48 hours prior to departure we will send you an email which reveals your destination.</p>
+				<p style="color:white;text-align:left">A week before your departure we
+					 will send you an email which contains weather forecast and recommended
+					  items to pack. 48 hours prior to departure we will send you an email
+						which reveals your destination.</p>
 			</div>
 			<div class="col-md-3 services-grids-w3-agile">
 				<i class="fa fa-car" aria-hidden="true"></i>
@@ -283,8 +352,10 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 					<div class=" col-md-6 team-grid-left">
 						<h4>Shishank Singh</h4>
 						<h5>Traveller</h5>
-						<p>Adipisci velit, sed quia non numquam eius modi tempora incidunt
-							ut labore et dolore magnam aliquam quaerat voluptatem</p>
+						<p>Shishank believes that opulent is not scaled by the amount of
+							money in your bank balance but by the experiences that we
+							accumulate during the journey of life,He loves travelling and he
+							believes every place has a story to offer and wants to share the story with everyone. </p>
 						<!-- <div class="social-wthree-icons bnragile-icons">
 							<ul>
 								<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
@@ -428,37 +499,74 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 									<img src="images/c1.jpg" alt="" />
 								</div>
 								<div class="testimonials-grid-2">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Quisque ut risus eget libero finibus facilisis. Phasellus tempus hendrerit sem ut iaculis.
-									Sed sit amet augue sit amet mauris gravida interdum. Donec vulputate tempus sem eget tempus hendrerit sem ut.</p>
+									<p>On our second #anniversary, we decided to go to a #hillstation.
+										 We were looking for a #happening place which should also fit
+										 in our #budget. All our #excitement went down the drain when
+										  we spent about three days looking for a perfect place and a
+											 perfect stay and came out with nothing. We were on verge of
+											  giving up the idea when Shishank asked me to give them a try.
+												 When we decided to go with them there was a lot of anxiety
+												 in our minds. It got converted into #excitement quickly
+												  with the reveal of our #surprisedestination (#Mussoorie)
+													 and stay details.<a href="https://goo.gl/8xzHX1">Read More....</a></p>
 									<h4>Priti Bansal</h4>
-									<h5>subtitles here</h5>
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="w3l-info1">
 								<div class="testimonials-grid-1 img2">
-									<img src="images/c2.jpg" alt="" />
+									<img src="images/bittu.jpg" alt="" />
 								</div>
 								<div class="testimonials-grid-2">
-									<p>“I had a week-long off around the new year 2018. But there was nothing in the plans. I had visited all the famous locations and remote villages of #himachalpradesh and #uttrakhand. While I was scratching my head to plan something, I stumbled upon #odyssey. Initially, I was sceptical about their idea. But who wouldn’t like #surprises, I thought of giving these guys a try. Now, I can say that I made a great decision. The whole #trip was smooth and fit exactly in my budget. Nothing couldn’t be better than such #travelsurprises on New year’s eve. Thank you #OdysseySurpriseTravels”.</p>
+									<p>“I had a week-long off around the new year 2018. But there
+										 was nothing in the plans. I had visited all the famous
+										 locations and remote villages of #himachalpradesh
+										 and #uttrakhand. While I was scratching my head to plan
+										 something, I stumbled upon #odyssey. Initially, I was sceptical
+										 about their idea. But who wouldn’t like #surprises, I thought
+										 of giving these guys a try. Now, I can say that I made a
+										 great decision. The whole #trip was smooth and fit exactly
+										 in my budget. Nothing couldn’t be better than such
+										 #travelsurprises on New year’s eve.
+										 Thank you #OdysseySurpriseTravels”.</p>
 									<h4>Bittu Chowdhary</h4>
-									<h5>subtitles here</h5>
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="w3l-info1">
 								<div class="testimonials-grid-1 img3">
-									<img src="images/c3.jpg" alt=""  />
+									<img src="images/garima.jpg" alt=""  />
 								</div>
 								<div class="testimonials-grid-2">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Quisque ut risus eget libero finibus facilisis. Phasellus tempus hendrerit sem ut iaculis.
-									Sed sit amet augue sit amet mauris gravida interdum. Donec vulputate tempus sem eget tempus hendrerit sem ut.</p>
+									<p>I and my sister wanted to take a break from Delhi's smog
+										and cold climate. while every option was filling because month
+										 end had #Christmas and #Newyears. With our working schedule,
+										  it had become a pain to find and book right places within
+											our defined budget. That's when a friend mentioned
+											#odysseysurprisetravels. These guys really understand your
+											taste and for a person like me who loves to get #surprised,
+											 it was a perfect fit. They #planned our #Pune #Mahabaleshwar
+											 while touching down #Mumbai with a flawless effort at a budget
+											  that I didn't know was possible! Thank you, Odyssey.</p>
 									<h4>Garima Verma</h4>
-									<h5>subtitles here</h5>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w3l-info1">
+								<div class="testimonials-grid-1 img3">
+									<img src="images/pinki.jpg" alt=""  />
+								</div>
+								<div class="testimonials-grid-2">
+									<p>I have been telling everyone that I and my husband went to
+										 a #surprise #honeymoon destination with
+										 #Odysseysurprisetravels and the excitement reached another
+										  level when the destination was disclosed to us 48 hours
+											prior to our #travel. It was a wonderful experience.
+											Thanks, #odysseysurprisetravels for this jolly good #journey</p>
+									<h4>Pinki Summarwal</h4>
 								</div>
 							</div>
 						</li>
@@ -479,66 +587,37 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 
 				<div class="col-sm-6 w3-agile-post-grids">
 					<div class="w3-agile-post-img w3-agile-post-img1">
-						<a href="#" data-toggle="modal" data-target="#myModal">
+						<a href="https://goo.gl/AKQRm8">
 						</a>
 					</div>
 					<div class="w3-agile-post-info">
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Who says surprises are only for kids? Experience surprise destinations with ODYSSEY.</a></h4>
-						<p>While we all are super excited about the long weekends that 2018 has to offer,
-							 most of us really don’t have time to plan a holiday. Either our bunch of buddies
-							 never agree on anything or we are stuck in our 9 to 5 routine or we do not want to deal
-							 with the hassles of planning a trip.  Call us at Odyssey....</p>
+						<h4><a href="https://goo.gl/AKQRm8">Who says surprises are only for kids? Experience surprise destinations with ODYSSEY.</a></h4>
+						<p>While we all are super excited about the long weekends that 2018 has to offer, most of us really don’t have time to plan a holiday....</p>
 						<ul>
-							<li>By <a href="#">Odyssey</a></li>
-							<!-- <li>May 8th,2017</li> -->
+							<!-- <li>By <a href="#">Od</a></li> -->
+							<li>Jan 29th,2018</li>
 						</ul>
 					</div>
-					<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+
 				</div>
 				<div class="col-sm-6 w3-agile-post-grids">
 					<div class="w3-agile-post-img w3-agile-post-img2">
-						<a href="#" data-toggle="modal" data-target="#myModal">
+						<a href="https://goo.gl/8FtSGy">
 						</a>
 					</div>
 					<div class="w3-agile-post-info">
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Quisque a rhoncus</a></h4>
-						<p>Suspendisse in nisl at ipsum molestie dignissim. Pellentesque est nisi, blandit eget aliquam sed,
-						Quisque ut risus eget libero finibus facilisis. Phasellus tempus hendrerit sem ut iaculis. consequat nec risus.</p>
+						<h4><a href="https://goo.gl/8FtSGy">Why should you book your​ next trip with Odyssey?</a></h4>
+						<p>How wonderful it is to spontaneously book tickets to some place and the next moment you are ready with your bags packed to fly off to that destination......</p>
 						<ul>
-							<li>By <a href="#">Admin -- </a></li>
-							<li>May 24th,2017</li>
+							<!-- <li>By <a href="#">Admin  </a></li> -->
+							<li>Feb 4th,2018</li>
 						</ul>
 					</div>
-					<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 
-				<div class="col-sm-6 w3-agile-post-grids">
-					<div class="col-md-6 w3-agile-post-img w3-agile-post-img11">
-						<a href="#" data-toggle="modal" data-target="#myModal">
-						</a>
-					</div>
-					<div class="col-md-6 w3-agile-post-info">
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Quisque a rhoncus</a></h4>
-						<p>Suspendisse in nisl at ipsum molestie dignissim. Pellentesque est nisi, blandit eget aliquam sed,
-						Quisque ut risus eget libero finibus facilisis. Phasellus tempus hendrerit sem ut iaculis. consequat nec risus.</p>
-					</div>
-					<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search-plus iconsearch" aria-hidden="true"></i></a>
-				</div>
-				<div class="col-sm-6 w3-agile-post-grids">
-					<div class="col-md-6 w3-agile-post-img w3-agile-post-img21">
-						<a href="#" data-toggle="modal" data-target="#myModal">
-						</a>
-					</div>
-					<div class=" col-md-6 w3-agile-post-info">
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">Quisque a rhoncus</a></h4>
-						<p>Suspendisse in nisl at ipsum molestie dignissim. Pellentesque est nisi, blandit eget aliquam sed,
-						Quisque ut risus eget libero finibus facilisis. Phasellus tempus hendrerit sem ut iaculis. consequat nec risus.</p>
-					</div>
-					<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-search-plus iconsearch" aria-hidden="true"></i></a>
-				</div>
-				<div class="clearfix"> </div>
+
 		</div>
 	</div>
 <!-- //blog -->
@@ -567,18 +646,12 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 				<div class="col-md-6 contact-form-left">
 					<div class="w3layouts-contact-form-top">
 						<h3>Adventure</h3>
-						<p>Pellentesque eget mi nec est tincidunt accumsan. Proin fermentum dignissim justo, vel euismod justo sodales vel. In non condimentum mauris. Maecenas condimentum interdum lacus, ac varius nisl dignissim ac.</p>
-					</div>
-					<div class="agileits-contact-address">
-						<h3>Follow us on</h3>
-						<div class="social">
-							<ul>
-								<li><a href="#" class="fa fa-facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus"> </a></li>
-								<li><a href="#" class="fa fa-linkedin"> </a></li>
-							</ul>
-						</div>
+						<div class="fb-page" data-href="https://www.facebook.com/odysseysurprisetravels/"
+						 data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+						 data-hide-cover="false" data-show-facepile="true">
+						 <blockquote cite="https://www.facebook.com/odysseysurprisetravels/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/odysseysurprisetravels/">Odyssey - Surprise Travels</a></blockquote>
+					 </div>
+
 					</div>
 				</div>
 				<div class="col-md-6 contact-form-right">
@@ -594,6 +667,9 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 							<button class="btn1">Submit</button>
 						</form>
 					</div>
+					<h4 style="margin-top:20px;">General inquiry? Please email <b>odysseyst@moldedbits.com</b><br/><br/><br/>
+                     Give us a ring Monday-Friday, 9:00am-9:00pm
+<b>+91-8800642652, +91-8290099808</b>‬</h3>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -611,18 +687,29 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 <div class="footer-w3layouts">
 	<div class="container">
 		<div class="agile-copy">
-			<p>Copyright © 2018 MoldedBits Pvt. Ltd.</p>
+			<p>Copyright © 2018 Odyssey - Surprise Travels Pvt. Ltd.</p>
 		</div>
 		<div class="w3_agileits_social">
 			<div class="social-icon">
-				<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
-				<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+				<a href="https://www.facebook.com/odysseysurprisetravels/" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/odyssey_s_t" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/odysseysurprisetravels/" class="social-button google"><i class="fa fa-instagram"></i></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
 </div>
+
+<!-- jQuery -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Codebird.js - required for TWITTER -->
+<script src="bower_components/codebird-js/codebird.js"></script>
+<!-- doT.js for rendering templates -->
+<script src="bower_components/doT/doT.min.js"></script>
+<!-- Moment.js for showing "time ago" -->
+<script src="bower_components/moment/min/moment.min.js"></script>
+<!-- Social-feed js -->
+<script src="js/jquery.socialfeed.js"></script>
 <!-- copyright -->
 
 <!-- bootstrap-pop-up -->
@@ -741,7 +828,202 @@ We plan 3-day weekend trips around India. All you have to do is tell us your bud
 <!-- //scrolling script -->
 
 <script src="js/jquery.vide.min.js"></script><!-- video js file -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.12/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 <!-- //Body -->
+
+<div class="lightbox" id="fl1"><form class="form-labels-on-top" enctype="multipart/form-data" method="post" action="submit.php">
+
+		<div class="form-title-row">
+				<h1>Traveller Form</h1>
+		</div>
+
+		<div class="form-row">
+				<label>
+						<span>Full name*</span>
+						<input type="text" name="first_name"><br/>
+				</label>
+		</div>
+
+		<div class="form-row">
+				<label>
+						<span>Email*</span>
+						<input type="email" name="email">
+				</label>
+		</div>
+
+		<div class="form-row">
+				<label>
+						<span>Contact</span>
+						<span style="font: 12px sans-serif;">Promise we will not spam you</span>
+						<input type="phone_number" name="phone_number"><br/>
+				</label>
+		</div>
+
+		<div class="form-row">
+				<label>
+						<span>Age Group*</span>
+						<select name="age_group">
+						<option value="15-20">15-20</option>
+						<option value="20-30">20-30</option>
+						<option value="30-40">30-40</option>
+						<option value="40-50">40-50</option>
+						<option value="Above 50">Above 50</option>
+						</select><br/>
+				</label>
+		</div>
+
+<div class="form-row">
+		<label><span>I will travel* </span></label>
+		<div class="form-radio-buttons">
+
+				<div>
+						<label>
+								<input type="radio" name="radio" value="Solo">
+								<span>Solo</span>
+						</label>
+				</div>
+
+				<div>
+						<label>
+								<input type="radio" name="radio" value="As a couple">
+								<span>As a couple</span>
+						</label>
+				</div>
+
+				<div>
+						<label>
+								<input type="radio" name="radio" value="With family">
+								<span>With family</span>
+						</label>
+				</div>
+
+				<div>
+						<label>
+								<input type="radio" name="radio" value="With friends">
+								<span>With friends</span>
+						</label>
+				</div>
+		</div>
+		</div>
+		<div class="form-row">
+
+		<label for"number_of_travellers">
+			<span>If you plan to travel with family or friends, then mention the number of people travelling with you </span></label>
+		<input type="text" name="number_of_travellers"><br/>
+</div>
+
+		<div class="form-row">
+			<label for"preferred_dates"><span>Your preferred travel dates* </span>
+				<span style="font: 12px sans-serif;">Odyssey trips are for 2 nights / 3 days. Please allow us at least  2 weeks to plan your surprise trip.</span>
+			<input type="date" name="preferred_dates"><br/>
+				</label>
+		</div>
+
+		<div class="form-row">
+			<label for"leaving_time"><span>Leaving not before: </span>
+			<input type="time" name="leaving_time"><br/>
+				</label>
+		</div>
+
+		<div class="form-row">
+			<label for"arriving_time"><span>Arriving not after: </span>
+			<input type="time" name="arriving_time"><br/>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label for"boarding"><span>Where would you like to start your journey from ?* </span>
+			<input type="text" name="boarding"><br/>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label for"last_destinations"><span>Tell us the names of your last 5 travel destinations.* </span>
+				<textarea rows="4" disabled="" name="last_destinations" style="width:100%;border:solid 1px rgba(0, 0, 0, 0.1);"></textarea>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label for"not_to_travel"><span>Do you have any upcoming trips planned ? </span>
+			<textarea rows="4" disabled="" name="planned_trip" style="width:100%;border:solid 1px rgba(0, 0, 0, 0.1);"></textarea>
+		</label>
+		</div>
+
+		<div class="form-row">
+			<label for"planned_trip"><span>Tell us some places where you would not like to travel..*</span>
+			<textarea rows="4" disabled=""  name="not_to_travel" style="width:100%;border:solid 1px rgba(0, 0, 0, 0.1);"></textarea>
+		</label>
+		</div>
+
+
+		<div class="form-row">
+			<label for"preference"><span>When you travel, you prefer ?* </span> </label><br>
+				<input type="checkbox" name="preference" value="Beach"  style="margin-bottom:8px;">  Beach<br>
+				<input type="checkbox" name="preference" value="Countryside" style="margin-bottom:8px;">  Countryside<br>
+				<input type="checkbox" name="preference" value="Desert" style="margin-bottom:8px;">  Desert<br>
+				<input type="checkbox" name="preference" value="Forest" style="margin-bottom:8px;">  Forest<br>
+				<input type="checkbox" name="preference" value="Lake" style="margin-bottom:8px;">  Lake<br>
+				<input type="checkbox" name="preference" value="Mountains" style="margin-bottom:8px;"> Mountains<br>
+				<input type="checkbox" name="preference" value="Snow" style="margin-bottom:8px;">  Snow<br>
+				<input type="checkbox" name="preference" value="Urban" style="margin-bottom:8px;">  Urban<br>
+				</label>
+		</div>
+
+		<div class="form-row">
+						<label><span>Tell us your preferred destination type*</span></label>
+						<div class="form-radio-buttons">
+
+								<div>
+										<label>
+												<input type="radio" name="radio" value="Isolated">
+												<span>Isolated</span>
+										</label>
+								</div>
+
+								<div>
+										<label>
+												<input type="radio" name="radio" value="Small City">
+												<span>Small City</span>
+										</label>
+								</div>
+
+								<div>
+										<label>
+												<input type="radio" name="radio" value="Town">
+												<span>Town</span>
+										</label>
+								</div>
+
+								<div>
+										<label>
+												<input type="radio" name="radio" value="Urban Metropolis">
+												<span>Urban Metropolis</span>
+										</label>
+								</div>
+						</div>
+						</div>
+
+						<div class="form-row">
+							<label for"hobbies"><span>What are some of your hobbies/interests?*  </span></label><br>
+								<input type="checkbox" name="preference" value="Historical sights"  style="margin-bottom:8px;">  Historical sights<br>
+								<input type="checkbox" name="preference" value="Shopping"  style="margin-bottom:8px;">  Shopping<br>
+								<input type="checkbox" name="preference" value="Art Museums/Galleries"  style="margin-bottom:8px;">  Art Museums/Galleries<br>
+								<input type="checkbox" name="preference" value="Trekking"  style="margin-bottom:8px;">  Trekking<br>
+								<input type="checkbox" name="preference" value="Dancing/Clubs">  Dancing/Clubs<br>
+
+<div class="form-row">
+<label for"notes"><span>Anything else we should know?</span>
+<span style="font: 12px sans-serif;">Examples: I don't drink alcohol. I love live music. I like handicraft shops. </span>
+<textarea rows="4" disabled="" name="notes" style="width:100%;border:solid 1px rgba(0, 0, 0, 0.1);"></textarea>
+</label>
+</div>
+		<div class="form-row">
+				<button type="submit">Submit Form</button>
+		</div>
+
+</form>
+
+</div>
 </html>

@@ -234,7 +234,7 @@ ul.agile_forms {
 /*-- //banner --*/
 /*-- banner-top --*/
 .w3layouts-banner-top{
-    background: url(../images/banner1.jpg) no-repeat 0px 0px;
+    background: url(../images/banner1.png) no-repeat 0px 0px;
     background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -243,7 +243,7 @@ ul.agile_forms {
     min-height: 780px;
 }
 .w3layouts-banner-top1{
-	background: url(../images/banner2.jpg) no-repeat 0px 0px;
+	background: url(../images/banner2.png) no-repeat 0px 0px;
     background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -252,7 +252,7 @@ ul.agile_forms {
     min-height: 780px;
 }
 .w3layouts-banner-top2{
-	background: url(../images/banner3.jpg) no-repeat 0px 0px;
+	background: url(../images/banner3.png) no-repeat 0px 0px;
     background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -428,7 +428,7 @@ h2.heading {
     line-height: 1.8em;
 }
 .abouthead {
-    width: 35%;
+    width: 80%;
     margin: 0 auto 4em;
     text-align: center;
     padding: 0em 2em;
@@ -439,7 +439,7 @@ h2.heading {
     text-transform: uppercase;
     font-size: 20px;
     margin-bottom: .5em;
-    color: #00d2be;
+    color: #760c4c;
 }
 .aboutleft h3,.aboutright h3 {
     text-transform: uppercase;
@@ -451,9 +451,9 @@ h2.heading {
     margin: 0 0 1em;
 }
 .panel-default > .panel-heading {
-    color: #eee;
-    background-color: #00d2be;
-    border-color: #252525;
+    color: #ffffff;
+    background-color: #760c4c;
+    border-color: #760c4c;
 }
 .panel-heading {
     padding: 12px 20px;
@@ -490,7 +490,7 @@ h2.heading {
     background: #232323;
 }
 .count-grid span {
-    background: #00d2be;
+    background: #760c4c;
     display: block;
     width: 65px;
     height: 2px;
@@ -654,9 +654,8 @@ h3.w3ls-title {
 }
 .team-grid-left p {
     margin: 1em 0;
-    font-size: 15px;
-    line-height: 28px;
-    margin: 2em 0 1em;
+    font-size: 13px;
+    line-height: 25px;
 	color:#000;
 }
 .team-grid-right{
@@ -939,7 +938,7 @@ div#testimonials {
 }
 [class^='imghvr-'] .agile-figcaption,
 [class*=' imghvr-'] .agile-figcaption {
-	background-color:#00d2be;
+	background-color:#760c4c;
 	padding:4.5em;
 	position: absolute;
 	top: 0;
@@ -1053,7 +1052,7 @@ div#testimonials {
     margin-bottom: 5em;
 }
 .w3-agile-post-img a {
-    background: url(../images/blog3.jpg) no-repeat 0px 0px;
+    background: url(../images/blog1.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height:300px;
     display: block;
@@ -1068,7 +1067,7 @@ div#testimonials {
     background-size: cover;
 }
 .w3-agile-post-img21 a {
-    background: url(../images/blog4.jpg) no-repeat 0px 0px;
+    background: url(../images/blog1.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 .w3-agile-post-img1 a:focus{
@@ -1222,7 +1221,7 @@ button.btn1:hover i.fa.fa-paper-plane-o{
     color: #FFFFFF !important;
 }
 .newsletter {
-    background: #00d2be;
+    background: #760c4c;
     padding: 4em 0;
     text-align: center;
 }
@@ -1349,11 +1348,11 @@ button.close {
     font-size: 1em;
     text-decoration: none;
     padding: .5em 2em;
-    background: #00d2be;
+    background: #760c4c;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
-    border: solid 1px #00d2be;
+    border: solid 1px #760c4c#00d2be;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -1512,7 +1511,7 @@ button.close {
 		font-size: 35px;
 	}
 	.abouthead {
-		width: 41%;
+		width: 100%;
 	}
 	.aboutleft h3, .aboutright h3 {
 		font-size: 20px;

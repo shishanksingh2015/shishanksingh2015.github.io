@@ -34,7 +34,7 @@ require("db.php");
 <option value="Solo">Solo</option>
 <option value="As a couple">As a couple</option>
 <option value="With friends">With friends</option>
-<option value="With Family">With Family</option>
+<option value="With Family">With family</option>
 </select><br/>
 
 <label for"number_of_travellers">If you plan to travel with family or friends, then mention the number of people travelling with you <span> *</span></label>
@@ -69,7 +69,7 @@ require("db.php");
 <option value="Urban">Urban</option>
 </select><br/>
 
-<label for"preference_type">When you travel, you prefer ?  <span> *</span></label>
+<label for"preference_type">Tell us your preferred destination type r ?  <span> *</span></label>
 <select name="preference_type">
 <option value="Isolated">Isolated</option>
 <option value="Small City">Small City</option>
